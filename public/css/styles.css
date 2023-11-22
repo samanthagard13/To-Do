@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to right, rgb(83, 70, 120), hsl(273, 11%, 62%));
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+header {
+    color:#ffffff;
+}
+  
+i {
+    font-size: x-large;
+    color:rgb(84, 84, 84);
+}
+
+i:hover {
+    color: black;
+}
+  
+footer {
+    text-align: center;
+    color: #ffffff; 
+}
+  
