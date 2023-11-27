@@ -6,18 +6,28 @@ body {
 header {
     color:#ffffff;
 }
+
+.color-btn {
+    color: white;
+    border: solid 1px white;
+}
   
 i {
     font-size: x-large;
-    color:rgb(84, 84, 84);
+    color:rgb(255, 255, 255);
 }
 
 i:hover {
-    color: black;
+    color: rgb(32, 32, 32);
+}
+
+.card {
+    height: 10em;
+    width: 25em;
+    margin: 1em;
 }
   
 footer {
-    text-align: center;
     color: #ffffff; 
 }
   

@@ -1,11 +1,43 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const addToDo = document.getElementById('addToDo');
+document.addEventListener("DOMContentLoaded", () => {
+  const addBtn = $("#addBtn");
+  const newToDo = $("#newToDo");
+  const todoContainer = $("#todo-container");
 
-    addToDo.addEventListener('click', () => {
-        const newInput = document.getElementById('newToDo').val();
+  const todos = JSON.parse(localStorage.getItem('todos')) || [];
 
-        const response = {
-            method: 'GET'
-        }
-    })
-})
+  renderToDo();
+
+  addBtn.click(async function () {
+    const toDo = newToDo.val();
+
+    if (!toDo) {
+      alert("Write a new todo!");
+      return;
+    }
+
+    todos.push({ todo: toDo });
+    localStorage.setItem('todos', JSON.stringify(todos));
+
+    newToDo.val('');
+
+    renderToDo();
+   
+  });
+
+  function renderToDo() {
+    todoContainer.empty();
+
+    todos.forEach(todo => {
+      updateToDo(todo.todo);
+    });
+  }
+
+
+function updateToDo(todo) {
+    const todoElement = $(`<div class="card">${todo}</div>`);
+
+    todoContainer.append(todoElement);
+}
+
+});
+
