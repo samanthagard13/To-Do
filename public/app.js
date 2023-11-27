@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newToDo = $("#newToDo");
   const todoContainer = $("#todo-container");
 
-  const todos = JSON.parse(localStorage.getItem('todos')) || [];
+  const todos = JSON.parse(localStorage.getItem("todos")) || [];
 
   renderToDo();
 
@@ -16,28 +16,45 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     todos.push({ todo: toDo });
-    localStorage.setItem('todos', JSON.stringify(todos));
+    localStorage.setItem("todos", JSON.stringify(todos));
 
-    newToDo.val('');
+    newToDo.val("");
 
     renderToDo();
-   
   });
 
   function renderToDo() {
     todoContainer.empty();
 
-    todos.forEach(todo => {
+    todos.forEach((todo) => {
       updateToDo(todo.todo);
     });
   }
 
+  function updateToDo(todo) {
+    const todoElement = $(
+      `<div class="card text-center">
+        <i class="fas fa-trash-alt delete-icon original-mode"></i>
+        <div class="mt-3">
+          ${todo}
+        </div>
+      </div>`
+    );
 
-function updateToDo(todo) {
-    const todoElement = $(`<div class="card">${todo}</div>`);
+    todoElement.find('.delete-icon').click(function () {
+      deleteToDo(todo);
+
+    });
 
     todoContainer.append(todoElement);
 }
 
-});
+  function deleteToDo(todo) {
+    const index = todos.findIndex(item => item.todo === todo);
+    todos.splice(index, 1);
 
+    localStorage.setItem('todos', JSON.stringify(todos));
+
+    renderToDo();
+  }
+});

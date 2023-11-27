@@ -1,7 +1,8 @@
-body {
-    background: linear-gradient(to right, rgb(83, 70, 120), hsl(273, 11%, 62%));
+body.original-mode {
+    background: linear-gradient(to right, rgb(83, 70, 120), hwb(273 58% 34%));
     font-family: 'Didact Gothic', sans-serif;
-  }
+    width: 100%;    
+}
 
 header {
     color:#ffffff;
@@ -12,13 +13,23 @@ header {
     border: solid 1px white;
 }
   
-i {
+i.original-mode {
     font-size: x-large;
     color:rgb(255, 255, 255);
 }
 
-i:hover {
+i.original-mode:hover {
     color: rgb(32, 32, 32);
+}
+
+.delete-icon.original-mode {
+    color: rgb(83, 70, 120);
+    text-align: end;
+    margin: 8px;
+}
+
+.delete-icon:hover {
+    color:hsl(273, 11%, 62%);
 }
 
 .card {
@@ -30,4 +41,13 @@ i:hover {
 footer {
     color: #ffffff; 
 }
+
+body.dark-mode {
+    background: linear-gradient(to right, rgb(56, 56, 58), rgb(128, 128, 129));
+    font-family: 'Didact Gothic', sans-serif;
+    width: 100%; 
+}
   
+.delete-icon.dark-mode {
+    color: rgb(56, 56, 58);
+}
