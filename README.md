@@ -6,6 +6,16 @@
 
  To do list with multiple color customization options. 
 
+ ![Screenshot](/public/images/Screenshot%202023-11-28%20125509.png)
+
+ Dark Mode -
+
+ ![Screenshot](/public/images/Screenshot%202023-11-28%20125525.png)
+
+ Happy Mode -
+
+ ![Screenshot](/public/images/Screenshot%202023-11-28%20125536.png)
+
  ## Table Of Contents
 
  - [Installation](#installation)
