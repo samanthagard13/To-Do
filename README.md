@@ -42,4 +42,4 @@
 
  My GitHub: [GitHub](https://github.com/samanthagard13)
  
- My Email: [Email](samantha.gard13@gmail.com)
+ My Email: samantha.gard13@gmail.com
