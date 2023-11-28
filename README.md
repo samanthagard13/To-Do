@@ -4,23 +4,17 @@
 
  ## Description
 
- To do list with minor customizations.
+ To do list with multiple color customization options. 
 
  ## Table Of Contents
 
  - [Installation](#installation)
- - [Usage](#usage)
  - [License](#license)
- - [Contributing](#contributing)
  - [Questions](#questions)
 
  ## Installation
 
- Visit the eployed site [here](https://to-do-drab-chi.vercel.app/)
-
- ## Usage
-
- 
+ Visit the eployed site [here.](https://to-do-drab-chi.vercel.app/)
 
   ## License
 
@@ -43,14 +37,6 @@
   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
-
- ## How To Contribute
-
- 
-
- # Tests
-
- 
 
  ## Questions
 
