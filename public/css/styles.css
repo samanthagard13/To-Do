@@ -1,11 +1,18 @@
+html {
+    width: 100%;
+}
+
 body.original-mode {
     background: linear-gradient(to right, rgb(83, 70, 120), hwb(273 58% 34%));
-    font-family: 'Didact Gothic', sans-serif;
-    width: 100%;    
+    font-family: 'Didact Gothic', sans-serif;  
 }
 
 header {
     color:#ffffff;
+}
+
+.title {
+    font-size: 4.5em;
 }
 
 .color-btn {
@@ -20,7 +27,7 @@ i.original-mode {
 }
 
 i.original-mode:hover {
-    color: rgb(97, 97, 97);
+    color: rgb(83, 83, 83);
 }
 
 .note {
@@ -28,7 +35,7 @@ i.original-mode:hover {
 }
 
 .delete-icon.original-mode {
-    color: rgb(83, 70, 120);
+    color: rgb(126, 126, 126);
     text-align: end;
     margin: 8px;
 }
@@ -48,7 +55,7 @@ footer {
 }
 
 body.dark-mode {
-    background: linear-gradient(to right, rgb(56, 56, 58), rgb(128, 128, 129));
+    background: linear-gradient(to right, rgb(40, 40, 41), rgb(93, 93, 93));
     font-family: 'Didact Gothic', sans-serif;
     width: 100%; 
 }
@@ -64,7 +71,7 @@ body.happy-mode {
 }
 
 body.minimal-mode {
-    background: linear-gradient(to right, rgb(184, 184, 184), rgb(207, 207, 207));
+    background: linear-gradient(to right, rgb(172, 172, 172), rgb(222, 222, 222));
     font-family: 'Didact Gothic', sans-serif;
     width: 100%; 
 }
@@ -73,4 +80,12 @@ body.minimal-mode {
     .color-btn{
         margin-right: 2em;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 3.5em;
+        margin-top: 15px;
+    }
+
 }
