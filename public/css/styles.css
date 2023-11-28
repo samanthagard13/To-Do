@@ -9,6 +9,7 @@ header {
 }
 
 .color-btn {
+    margin-top: 2em;
     color: white;
     border: solid 1px white;
 }
@@ -19,7 +20,11 @@ i.original-mode {
 }
 
 i.original-mode:hover {
-    color: rgb(32, 32, 32);
+    color: rgb(97, 97, 97);
+}
+
+.note {
+    font-size: larger;
 }
 
 .delete-icon.original-mode {
@@ -50,4 +55,22 @@ body.dark-mode {
   
 .delete-icon.dark-mode {
     color: rgb(56, 56, 58);
+}
+
+body.happy-mode {
+    background: linear-gradient(to right, rgb(171, 197, 147), rgb(163, 163, 230));
+    font-family: 'Didact Gothic', sans-serif;
+    width: 100%; 
+}
+
+body.minimal-mode {
+    background: linear-gradient(to right, rgb(184, 184, 184), rgb(207, 207, 207));
+    font-family: 'Didact Gothic', sans-serif;
+    width: 100%; 
+}
+
+@media screen and (max-width: 780px) {
+    .color-btn{
+        margin-right: 2em;
+    }
 }

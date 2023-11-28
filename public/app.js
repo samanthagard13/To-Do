@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const todoElement = $(
       `<div class="card text-center">
         <i class="fas fa-trash-alt delete-icon original-mode"></i>
-        <div class="mt-3">
+        <div class="mt-3 note">
           ${todo}
         </div>
       </div>`
