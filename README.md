@@ -24,7 +24,7 @@
 
  ## Installation
 
- Visit the eployed site [here.](https://to-do-drab-chi.vercel.app/)
+ Visit the deployed site [here.](https://to-do-drab-chi.vercel.app/)
 
   ## License
 
