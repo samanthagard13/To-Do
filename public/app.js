@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderToDo() {
     todoContainer.empty();
-
+    if (todos.length === 0) {
+      todoContainer.html('<div class="text-center no-do">Nothing to do...</div>')
+    }
     todos.forEach((todo) => {
       updateToDo(todo.todo);
     });
