@@ -23,6 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
     renderToDo();
   });
 
+  newToDo.keypress(function (e) {
+    if (e.which === 13) {
+      addBtn.click();
+    }
+  });
+
   function renderToDo() {
     todoContainer.empty();
     if (todos.length === 0) {
